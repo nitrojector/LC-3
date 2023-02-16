@@ -5,11 +5,10 @@ module reg16b(
 	input clk,
 	output reg [15:0] Q);
 
-	always @(posedge clk or posedge rst) begin
+	always @(negedge clk) begin
 		if (rst)
-			Q <= 16'b0000000000000000;
+			Q <= 16'h0000;
 		else if (en)
 			Q <= D;
 	end
-
 endmodule

@@ -1,0 +1,380 @@
+// Copyright (C) 2022  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "02/16/2023 12:27:10"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          main
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module main_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg clk;
+reg clkExt;
+reg [15:0] memAddrExt;
+reg [15:0] memDataExt;
+reg memWEExt;
+reg [2:0] regSelExt;
+reg rst;
+// wires                                               
+wire [15:0] BUS;
+wire [5:0] FSM_state;
+wire [15:0] IROut;
+wire [15:0] MARMUXOut;
+wire NVal;
+wire [15:0] PCOut;
+wire PVal;
+wire ZVal;
+wire [15:0] memOutExt;
+wire [15:0] regOutExt;
+
+// assign statements (if any)                          
+main i1 (
+// port map - connection between master ports and signals/registers   
+	.BUS(BUS),
+	.FSM_state(FSM_state),
+	.IROut(IROut),
+	.MARMUXOut(MARMUXOut),
+	.NVal(NVal),
+	.PCOut(PCOut),
+	.PVal(PVal),
+	.ZVal(ZVal),
+	.clk(clk),
+	.clkExt(clkExt),
+	.memAddrExt(memAddrExt),
+	.memDataExt(memDataExt),
+	.memOutExt(memOutExt),
+	.memWEExt(memWEExt),
+	.regOutExt(regOutExt),
+	.regSelExt(regSelExt),
+	.rst(rst)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+
+// clk
+initial
+begin
+	clk = 1'b0;
+	clk = #105000 1'b1;
+	# 5000;
+	repeat(89)
+	begin
+		clk = 1'b0;
+		clk = #5000 1'b1;
+		# 5000;
+	end
+end 
+
+// clkExt
+always
+begin
+	clkExt = 1'b0;
+	clkExt = #5000 1'b1;
+	#5000;
+end 
+// memAddrExt[ 15 ]
+initial
+begin
+	memAddrExt[15] = 1'b0;
+	memAddrExt[15] = #100000 1'bZ;
+	memAddrExt[15] = #410000 1'b0;
+end 
+// memAddrExt[ 14 ]
+initial
+begin
+	memAddrExt[14] = 1'b0;
+	memAddrExt[14] = #100000 1'bZ;
+	memAddrExt[14] = #410000 1'b0;
+end 
+// memAddrExt[ 13 ]
+initial
+begin
+	memAddrExt[13] = 1'b0;
+	memAddrExt[13] = #100000 1'bZ;
+	memAddrExt[13] = #410000 1'b0;
+end 
+// memAddrExt[ 12 ]
+initial
+begin
+	memAddrExt[12] = 1'b0;
+	memAddrExt[12] = #100000 1'bZ;
+	memAddrExt[12] = #410000 1'b0;
+end 
+// memAddrExt[ 11 ]
+initial
+begin
+	memAddrExt[11] = 1'b0;
+	memAddrExt[11] = #100000 1'bZ;
+	memAddrExt[11] = #410000 1'b0;
+end 
+// memAddrExt[ 10 ]
+initial
+begin
+	memAddrExt[10] = 1'b0;
+	memAddrExt[10] = #100000 1'bZ;
+	memAddrExt[10] = #410000 1'b0;
+end 
+// memAddrExt[ 9 ]
+initial
+begin
+	memAddrExt[9] = 1'b0;
+	memAddrExt[9] = #100000 1'bZ;
+	memAddrExt[9] = #410000 1'b0;
+end 
+// memAddrExt[ 8 ]
+initial
+begin
+	memAddrExt[8] = 1'b0;
+	memAddrExt[8] = #100000 1'bZ;
+	memAddrExt[8] = #410000 1'b0;
+end 
+// memAddrExt[ 7 ]
+initial
+begin
+	memAddrExt[7] = 1'b0;
+	memAddrExt[7] = #100000 1'bZ;
+	memAddrExt[7] = #410000 1'b0;
+end 
+// memAddrExt[ 6 ]
+initial
+begin
+	memAddrExt[6] = 1'b0;
+	memAddrExt[6] = #100000 1'bZ;
+	memAddrExt[6] = #410000 1'b0;
+end 
+// memAddrExt[ 5 ]
+initial
+begin
+	memAddrExt[5] = 1'b0;
+	memAddrExt[5] = #100000 1'bZ;
+	memAddrExt[5] = #410000 1'b0;
+end 
+// memAddrExt[ 4 ]
+initial
+begin
+	memAddrExt[4] = 1'b0;
+	memAddrExt[4] = #100000 1'bZ;
+	memAddrExt[4] = #410000 1'b0;
+end 
+// memAddrExt[ 3 ]
+initial
+begin
+	memAddrExt[3] = 1'b0;
+	memAddrExt[3] = #100000 1'bZ;
+	memAddrExt[3] = #410000 1'b0;
+end 
+// memAddrExt[ 2 ]
+initial
+begin
+	memAddrExt[2] = 1'b0;
+	memAddrExt[2] = #80000 1'b1;
+	memAddrExt[2] = #20000 1'bZ;
+	memAddrExt[2] = #410000 1'b0;
+	memAddrExt[2] = #160000 1'b1;
+	memAddrExt[2] = #40000 1'b0;
+end 
+// memAddrExt[ 1 ]
+initial
+begin
+	memAddrExt[1] = 1'b0;
+	memAddrExt[1] = #40000 1'b1;
+	memAddrExt[1] = #40000 1'b0;
+	memAddrExt[1] = #20000 1'bZ;
+	memAddrExt[1] = #410000 1'b0;
+	memAddrExt[1] = #80000 1'b1;
+	memAddrExt[1] = #80000 1'b0;
+end 
+// memAddrExt[ 0 ]
+initial
+begin
+	memAddrExt[0] = 1'b0;
+	memAddrExt[0] = #20000 1'b1;
+	memAddrExt[0] = #20000 1'b0;
+	memAddrExt[0] = #20000 1'b1;
+	memAddrExt[0] = #20000 1'b0;
+	memAddrExt[0] = #20000 1'bZ;
+	# 410000;
+	repeat(2)
+	begin
+		memAddrExt[0] = 1'b0;
+		memAddrExt[0] = #40000 1'b1;
+		# 40000;
+	end
+	memAddrExt[0] = 1'b0;
+end 
+
+// memWEExt
+initial
+begin
+	memWEExt = 1'b1;
+	memWEExt = #100000 1'b0;
+end 
+// memDataExt[ 15 ]
+initial
+begin
+	memDataExt[15] = 1'b0;
+	memDataExt[15] = #80000 1'b1;
+	memDataExt[15] = #20000 1'b0;
+end 
+// memDataExt[ 14 ]
+initial
+begin
+	memDataExt[14] = 1'b0;
+	memDataExt[14] = #60000 1'b1;
+	memDataExt[14] = #20000 1'b0;
+end 
+// memDataExt[ 13 ]
+initial
+begin
+	memDataExt[13] = 1'b0;
+end 
+// memDataExt[ 12 ]
+initial
+begin
+	memDataExt[12] = 1'b1;
+	memDataExt[12] = #100000 1'b0;
+end 
+// memDataExt[ 11 ]
+initial
+begin
+	memDataExt[11] = 1'b0;
+	memDataExt[11] = #80000 1'b1;
+	memDataExt[11] = #20000 1'b0;
+end 
+// memDataExt[ 10 ]
+initial
+begin
+	memDataExt[10] = 1'b0;
+	memDataExt[10] = #40000 1'b1;
+	memDataExt[10] = #40000 1'b0;
+end 
+// memDataExt[ 9 ]
+initial
+begin
+	memDataExt[9] = 1'b0;
+	memDataExt[9] = #20000 1'b1;
+	memDataExt[9] = #20000 1'b0;
+	memDataExt[9] = #20000 1'b1;
+	memDataExt[9] = #20000 1'b0;
+end 
+// memDataExt[ 8 ]
+initial
+begin
+	memDataExt[8] = 1'b0;
+end 
+// memDataExt[ 7 ]
+initial
+begin
+	memDataExt[7] = 1'b0;
+end 
+// memDataExt[ 6 ]
+initial
+begin
+	memDataExt[6] = 1'b0;
+	memDataExt[6] = #20000 1'b1;
+	memDataExt[6] = #20000 1'b0;
+end 
+// memDataExt[ 5 ]
+initial
+begin
+	memDataExt[5] = 1'b1;
+	memDataExt[5] = #40000 1'b0;
+	memDataExt[5] = #40000 1'b1;
+	memDataExt[5] = #20000 1'b0;
+end 
+// memDataExt[ 4 ]
+initial
+begin
+	memDataExt[4] = 1'b0;
+	memDataExt[4] = #80000 1'b1;
+	memDataExt[4] = #20000 1'b0;
+end 
+// memDataExt[ 3 ]
+initial
+begin
+	memDataExt[3] = 1'b1;
+	memDataExt[3] = #40000 1'b0;
+	memDataExt[3] = #40000 1'b1;
+	memDataExt[3] = #20000 1'b0;
+end 
+// memDataExt[ 2 ]
+initial
+begin
+	memDataExt[2] = 1'b1;
+	memDataExt[2] = #20000 1'b0;
+	memDataExt[2] = #60000 1'b1;
+	memDataExt[2] = #20000 1'b0;
+end 
+// memDataExt[ 1 ]
+initial
+begin
+	memDataExt[1] = 1'b0;
+	memDataExt[1] = #20000 1'b1;
+	memDataExt[1] = #20000 1'b0;
+	memDataExt[1] = #40000 1'b1;
+	memDataExt[1] = #20000 1'b0;
+end 
+// memDataExt[ 0 ]
+initial
+begin
+	memDataExt[0] = 1'b1;
+	memDataExt[0] = #100000 1'b0;
+end 
+// regSelExt[ 2 ]
+initial
+begin
+	regSelExt[2] = 1'bZ;
+	regSelExt[2] = #510000 1'b0;
+	regSelExt[2] = #160000 1'b1;
+	regSelExt[2] = #40000 1'b0;
+end 
+// regSelExt[ 1 ]
+initial
+begin
+	regSelExt[1] = 1'bZ;
+	regSelExt[1] = #510000 1'b0;
+	regSelExt[1] = #80000 1'b1;
+	regSelExt[1] = #80000 1'b0;
+end 
+// regSelExt[ 0 ]
+initial
+begin
+	regSelExt[0] = 1'bZ;
+	regSelExt[0] = #510000 1'b0;
+	regSelExt[0] = #40000 1'b1;
+	regSelExt[0] = #40000 1'b0;
+	regSelExt[0] = #40000 1'b1;
+	regSelExt[0] = #40000 1'b0;
+end 
+
+// rst
+initial
+begin
+	rst = 1'b0;
+end 
+endmodule
+
