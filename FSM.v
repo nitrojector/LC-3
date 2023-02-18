@@ -28,7 +28,7 @@ module FSM(
 	output reg [2:0] dDR,
 	output reg [1:0] dALUK,
 	output reg dMemWE,
-	//FSM State Output
+	//FSM State
 	output reg [5:0] FSM_state,
 	//Processor
 	input clk,
