@@ -1,0 +1,12 @@
+*.bak
+*.qsf
+*.qpf
+*.qws
+/db/
+/output_files/
+/incremental_db/
+/greybox_tmp/
+/simulation/
+
+# Individual Files
+TEST.*
